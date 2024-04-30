@@ -1,10 +1,7 @@
-.container {
-  margin: 29px 60px;
-}
-
 .checkbox-group {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 24px
 }

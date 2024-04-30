@@ -5,7 +5,6 @@ import { Checkbox } from './components/Checkbox/Checkbox';
 function App() {
 
   return (
-    <div className='container'>
       <form>
         <fieldset className='checkbox-group'>
           <legend>Checkbox Group</legend>
@@ -38,7 +37,6 @@ function App() {
           />
         </fieldset>
       </form>
-    </div>
   );
 }
 
