@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import { Checkbox } from './components/Checkbox/Checkbox';
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <form>
+        <fieldset className='checkbox-group'>
+          <legend>Checkbox Group</legend>
+          <Checkbox
+            id={"checked"}
+            label={"Checked"}
+            checked
+          />
+          <Checkbox
+            id={"checked-disabled"}
+            label={"Checked disabled"}
+            checked
+            disabled
+          />
+          <Checkbox
+            id={"disabled"}
+            label={"Disabled"}
+            disabled
+          />
+          <Checkbox
+            id={"indeterminate"}
+            label={"Indeterminate"}
+            indeterminate
+          />
+          <Checkbox
+            id={"indeterminate-disabled"}
+            label={"Indeterminate disabled"}
+            indeterminate
+            disabled
+          />
+        </fieldset>
+      </form>
     </div>
   );
 }
